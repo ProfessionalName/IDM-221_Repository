@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'sumanaregular';
+    src: url('../fonts/sumana-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sumana-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+nav {
+	text-align: left;
+}
+
+p.sumana{
+	font-family: 'sumanaregular'
+}
+
+#resume-address{
+	text-align: center;
+}
