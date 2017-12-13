@@ -1,4 +1,31 @@
+/*
+Notes
+
+Fonts: Body text: sumanaregular, Header: Aldrich , Sub-Header: Arvo 
+
+
+
+*/
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  transition: .4s;
+}
+
+html {
+	font-size: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Aldrich');
+
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
 @font-face {
+
     font-family: 'sumanaregular';
     src: url('../fonts/sumana-regular-webfont.woff2') format('woff2'),
          url('../fonts/sumana-regular-webfont.woff') format('woff');
@@ -7,14 +34,220 @@
 
 }
 
-nav {
-	text-align: left;
+/*
+
+ALL PAGES
+
+*/
+
+body{
+  background-color: #E3E5C5;
 }
 
-p.sumana{
+main, address {
+  color: black;
+  max-width: 75ch;
+  font-family: 'sumanaregular'
+/*  animation-name: highlevel;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;*/
+}
+
+ul {
+   font-family: 'Arvo', serif;
+}
+
+h1, h2, h3 {
+  color: black;
+  font-family: 'Aldrich', sans-serif;
+}
+
+/*@keyframes highlevel {
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color: orange;
+  }
+  100%{
+    background-color: white;
+  }
+  }*/
+
+
+#fixed-nav {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 6rem;
+    background-color: #32213A;
+}
+
+#fixed-nav li{
+  height: 1.5rem;
+}
+
+#fixed-nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    padding: .5rem;
+    margin: .5rem;
+    color: #D1C9A1;
+}
+
+#fixed-nav a:hover{
+  color: #66717E;
+}
+
+
+.right-of-nav {
+  position: absolute;
+  margin-left: 6rem;
+  padding-left: 1.5rem;
+  padding-right: .8rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+
+
+}
+
+.sumana{
 	font-family: 'sumanaregular'
 }
 
+/*
+
+LANDING PAGE
+
+*/
+
+#landing-content {
+/*  background-image: url("../Images/milky-way.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%*/
+  background-color: #E3E5C5;
+}
+
+#landing-nav {
+  background-color: #32213A;
+}
+
+
+#landing-header { 
+  width: 50%;
+  padding: .625rem; 
+  margin: auto;
+  text-align: center;
+  /*box-shadow: 5px 5px 2.5px #383B53;*/
+}
+
+#landing-header h2 {
+  font-size: 3rem;
+}
+
+#landing-header ul li {
+  display: inline-block;
+}
+
+#landing-header ul li a {
+  color: white;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.2rem .8rem 0px .8rem;
+  margin: .2rem .9rem .2rem .9rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #D1C9A1;
+
+}
+
+#landing-header ul li a:hover {
+  color: #66717E;
+}
+
+#landing-intro-header{
+  text-align: center;
+}
+
+#landing-introduction {
+  font-size: 1.5rem;
+  padding: .8rem;
+  color: #313449;
+}
+
+#landing-introduction h3 {
+  font-size: 2rem;
+  padding-bottom: .625rem;
+}
+
+#landing-footer {
+  font-size: .7rem;
+  padding: .8rem;
+  text-align: center;
+}
+
+#intro-text {
+  text-align: left;
+  margin: auto;
+}
+
+
+/*
+
+ABOUT PAGE
+
+*/
+
+#about main {
+  font-size: 1.2rem;
+}
+
+#about-image {
+  width: 9rem;
+  height: 9rem;
+}
+
+/*
+
+RESUME PAGE
+
+*/
+
 #resume-address{
-	text-align: center;
+  text-align: center;
+}
+
+#resume main {
+  font-size: 1.2rem;
+}
+
+
+#contact-list {
+  list-style-type: none;
+}
+
+/*
+
+CONTACT PAGE
+
+*/
+
+#contact-email {
+  padding-bottom: 1rem;
+}
+
+#contact-list li{
+  display: inline;
+  padding: .5rem;
+}
+
+#contact-image{
+  height: 4rem;
+  width: 4rem;
 }
