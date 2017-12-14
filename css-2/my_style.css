@@ -1,13 +1,20 @@
 /*
-Notes
+Cristiano D'Angelo
+IDM-221
+12/15/2017
+Final Project
 
-Fonts: Body text: sumanaregular, Header: Aldrich , Sub-Header: Arvo 
+Notes:
 
-
-
+Fonts - Body text: sumanaregular, Header: Aldrich , Sub-Header: Arvo 
 */
 
 
+/*
+
+IMPORTS AND ALL SELECTOR
+
+*/
 
 
 
@@ -73,6 +80,11 @@ h1, h2, h3 {
   }
   }*/
 
+/*
+
+NAV BAR
+
+*/
 
 #fixed-nav {
     overflow: hidden;
@@ -121,9 +133,10 @@ h1, h2, h3 {
 	font-family: 'sumanaregular'
 }
 
+
 /*
 
-LANDING PAGE
+INDEX PAGE
 
 */
 
@@ -144,7 +157,6 @@ LANDING PAGE
   padding: .625rem; 
   margin: auto;
   text-align: center;
-  /*box-shadow: 5px 5px 2.5px #383B53;*/
 }
 
 #landing-header h2 {
@@ -159,8 +171,6 @@ LANDING PAGE
   color: white;
   display: inline-block;
   text-transform: uppercase;
-/*  padding: 0.2rem .8rem 0px .8rem;*/
-/*  margin: .2rem .9rem .2rem .9rem;*/
   text-decoration: none;
   font-size: 2rem;
   color: #D1C9A1;
@@ -210,6 +220,30 @@ padding: 0.2rem .8rem 0px 1rem;
 
 /*
 
+INDEX FOOTER 
+
+*/
+
+#index-footer{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+
+#footer-contact-list{
+  display: table;
+  margin: auto;
+  width: 50%;
+}
+
+#footer-contact-list li{
+  display: inline;
+}
+
+
+/*
+
 ABOUT PAGE
 
 */
@@ -223,6 +257,7 @@ ABOUT PAGE
   width: 15rem;
   height: 15rem;
 }
+
 
 /*
 
@@ -285,26 +320,6 @@ CONTACT INFO
 }
 
 
-/*
-
-INDEX FOOTER 
-
-*/
-
-#index-footer{
-  margin: auto;
-  width: 50%;
-  text-align: center;
-}
 
 
-#footer-contact-list{
-  display: table;
-  margin: auto;
-  width: 50%;
-}
-
-#footer-contact-list li{
-  display: inline;
-}
 
