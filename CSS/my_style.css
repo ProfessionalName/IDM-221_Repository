@@ -20,7 +20,6 @@ html {
 	font-size: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Aldrich');
 
 @import url('https://fonts.googleapis.com/css?family=Arvo');
 
@@ -47,7 +46,7 @@ body{
 main, address {
   color: black;
   max-width: 75ch;
-  font-family: 'sumanaregular'
+  font-family: 'sumanaregular';
 /*  animation-name: highlevel;
   animation-duration: 2s;
   animation-iteration-count: infinite;*/
@@ -83,6 +82,7 @@ h1, h2, h3 {
     height: 100%;
     width: 6rem;
     background-color: #32213A;
+    z-index: 1;
 }
 
 #fixed-nav li{
@@ -107,7 +107,7 @@ h1, h2, h3 {
 
 .right-of-nav {
   position: absolute;
-  margin-left: 6rem;
+  margin-left: 5.5rem;
   padding-left: 1.5rem;
   padding-right: .8rem;
   padding-top: 1rem;
@@ -159,12 +159,22 @@ LANDING PAGE
   color: white;
   display: inline-block;
   text-transform: uppercase;
-  padding: 0.2rem .8rem 0px .8rem;
-  margin: .2rem .9rem .2rem .9rem;
+/*  padding: 0.2rem .8rem 0px .8rem;*/
+/*  margin: .2rem .9rem .2rem .9rem;*/
   text-decoration: none;
   font-size: 2rem;
   color: #D1C9A1;
 
+}
+
+#landing-about{
+padding: 0.2rem .8rem 0px 1rem;
+ margin: .2rem 5rem .2rem .9rem;
+}
+
+#landing-resume{
+padding: 0.2rem .8rem 0px 1rem;
+ margin: .2rem .9rem .2rem .9rem;
 }
 
 #landing-header ul li a:hover {
@@ -209,8 +219,9 @@ ABOUT PAGE
 }
 
 #about-image {
-  width: 9rem;
-  height: 9rem;
+  float: right;
+  width: 15rem;
+  height: 15rem;
 }
 
 /*
@@ -232,22 +243,68 @@ RESUME PAGE
   list-style-type: none;
 }
 
+#resume-format {
+  padding-left: 3rem;
+  padding-top: .3rem;
+}
+
+.resume-block{
+  margin-left: .5rem;
+}
+
+#resume-main h3 {
+  margin-bottom: .7rem;
+}
+
+#resume-main ul {
+  font-family: 'sumanaregular'
+}
+
 /*
 
-CONTACT PAGE
+CONTACT INFO
 
 */
 
 #contact-email {
-  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  margin: 0rem;
+}
+
+#contact-list {
+  padding-top: 225%;
 }
 
 #contact-list li{
-  display: inline;
-  padding: .5rem;
+  padding-top: 3.7rem;
 }
 
 #contact-image{
-  height: 4rem;
-  width: 4rem;
+  height: 3.5rem;
+  width: 3.5rem;
 }
+
+
+/*
+
+INDEX FOOTER 
+
+*/
+
+#index-footer{
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+
+#footer-contact-list{
+  display: table;
+  margin: auto;
+  width: 50%;
+}
+
+#footer-contact-list li{
+  display: inline;
+}
+

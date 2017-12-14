@@ -6,6 +6,8 @@
 
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/my_style.css">
+<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 
 </head>
 
@@ -16,24 +18,26 @@
     	<li><a href="index.html">Home</a></li>
     	<li><a href="about.html">About</a></li>
           <li><a href="resume.html"><b>Resume</b></a></li>
-          <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <ul id="contact-list">
+    	<li><a id="contact-email" href="mailto:cvd33@drexel.edu">Email</li>
+		<li><a href="#facebook"><img src="images/facebook.png" alt="Facebook link" id="contact-image" /></a></li>
+		<li><a href="#linkedin"><img src="images/linkedin.png" alt="Linkedin link" id="contact-image" /></a></li>
+		<li><a href="#github"><img src="images/github.png" alt="Github link" id="contact-image" /></a></li>
+	</ul>
 </nav>
 
 <div id="resume" class="right-of-nav">
 
 <h1>My Resume</h1>
 
-<br>
 
-<address id="resume-address">
-</address>
-
-<main>
+<main id = "resume-main">
 
 <h3>Education</h3>
 
-<br>
+<div class="resume-block">
 
 <p>
 
@@ -59,21 +63,23 @@ Cumulative GPA: 3.75
 <b>Skills </b>: Python, Java, C++, LaTeX, Maple, Google Docs, Microsoft Word. 
 </p>
 
+</div>
+
 <br>
 <br>
 
 <h3>Work Experience</h3>
 
-<br>
-
 <p>
+
+<div class="resume-block">
 <b>Lawn Care</b>, Weichert Work Mobility, Ewing Township, NJ	 (2015)
 
 <ul id="resume-format">
 	<li>Maintained neighborhood home while it was on the market.</li>
 	<li>Assessed individual lawn status and determined proper tools and equipment to keep the home presentable.</li>
 </ul>
-
+</div>
 
 </p>
 
@@ -86,34 +92,39 @@ Cumulative GPA: 3.75
 
 <p>
 
-<br>
-
+<div class="resume-block">
 <b>Toastmasters</b>, ETS Campus, Princeton, NJ	 (2016)
 
 <ul id="resume-format">
 	<li>Participated in a 3 month specialized program that develops speaking and leadership skills.</li>
 	<li>Received the most improved award for demonstrating the most development by the end of the course.</li>
 </ul>
+</div>
 
 <br>
 
+<div class="resume-block">
 <b>ID Tech RPG Game Design</b>, Princeton University, Princeton, NJ	 (2014-2015)
 
 <ul id="resume-format">
 	<li>Summer camp with focus on basic principles of game design and level creation.</li>
 	<li>Gained experience in finding creative solutions to unexpected problems while working on a project.</li>
 </ul>
+</div>
 
 <br>
 
+<div class="resume-block">
 <b>Interfaith Caregivers</b>, Hamilton, NJ   	(2015-2016) 
 
 <ul id="resume-format">
 	<li>Assisted a homebound senior by visiting them weekly.</li>
 </ul>
+</div>
 
 <br>
 
+<div class="resume-block">
 <b>Community Service</b>, Unitarian Universalist Fellowship of Lower Bucks    (2014 -2016)
 
 <ul id="resume-format">
@@ -121,6 +132,7 @@ Cumulative GPA: 3.75
 	<li>Neighborhood Collection for Bristol Food Bank</li>
 	<li>Donation Organization for Bristol Food Bank</li>
 </ul>
+</div>
 
 
 </p>
