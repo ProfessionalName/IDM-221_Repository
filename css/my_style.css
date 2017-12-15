@@ -21,6 +21,7 @@ IMPORTS AND ALL SELECTOR
 * {
   box-sizing: border-box;
   transition: .4s;
+  color: #32213A;
 }
 
 html {
@@ -47,16 +48,14 @@ ALL PAGES
 */
 
 body{
-  background-color: #E3E5C5;
+  background-image: url("../images/sandstone.jpg");
+  background-size: cover;
 }
 
 main, address {
   color: black;
   max-width: 75ch;
-  font-family: 'sumanaregular';
-/*  animation-name: highlevel;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;*/
+  font-family: 'sumanaregular', serif;
 }
 
 ul {
@@ -64,21 +63,18 @@ ul {
 }
 
 h1, h2, h3 {
-  color: black;
+  color: #32213A;
   font-family: 'Aldrich', sans-serif;
 }
 
-/*@keyframes highlevel {
-  0%{
-    background-color: white;
-  }
-  50%{
-    background-color: orange;
-  }
-  100%{
-    background-color: white;
-  }
-  }*/
+h1 {
+  font-size: 2.5rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 
 /*
 
@@ -88,17 +84,17 @@ NAV BAR
 
 #fixed-nav {
     overflow: hidden;
-    background-color: black;
     position: fixed;
     left: 0;
     height: 100%;
     width: 6rem;
     background-color: #32213A;
     z-index: 1;
+    box-shadow: 0 0 5px #32213A;
 }
 
 #fixed-nav li{
-  height: 1.5rem;
+   height: auto;
 }
 
 #fixed-nav a {
@@ -106,8 +102,6 @@ NAV BAR
     color: white;
     text-align: center;
     text-decoration: none;
-    position: fixed;
-    padding: .5rem;
     margin: .5rem;
     color: #D1C9A1;
 }
@@ -119,7 +113,7 @@ NAV BAR
 
 .right-of-nav {
   position: absolute;
-  margin-left: 5.5rem;
+  margin-left: 6rem;
   padding-left: 1.5rem;
   padding-right: .8rem;
   padding-top: 1rem;
@@ -129,8 +123,14 @@ NAV BAR
 
 }
 
+#logo{
+  max-width: 4rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
 .sumana{
-	font-family: 'sumanaregular'
+	font-family: 'sumanaregular', serif;
 }
 
 
@@ -141,10 +141,8 @@ INDEX PAGE
 */
 
 #landing-content {
-/*  background-image: url("../Images/milky-way.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%*/
-  background-color: #E3E5C5;
+background-image: url("../images/sandstone.jpg");
+background-size: cover;
 }
 
 #landing-nav {
@@ -155,12 +153,13 @@ INDEX PAGE
 #landing-header { 
   width: 50%;
   padding: .625rem; 
-  margin: auto;
+  margin: 10% auto 0;
   text-align: center;
 }
 
 #landing-header h2 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 #landing-header ul li {
@@ -177,6 +176,10 @@ INDEX PAGE
 
 }
 
+#landing-header ul li a:hover {
+  color: #66717E;
+}
+
 #landing-about{
 padding: 0.2rem .8rem 0px 1rem;
  margin: .2rem 5rem .2rem .9rem;
@@ -187,15 +190,13 @@ padding: 0.2rem .8rem 0px 1rem;
  margin: .2rem .9rem .2rem .9rem;
 }
 
-#landing-header ul li a:hover {
-  color: #66717E;
-}
 
 #landing-intro-header{
   text-align: center;
 }
 
 #landing-introduction {
+  margin-top: 1.2rem;
   font-size: 1.5rem;
   padding: .8rem;
   color: #313449;
@@ -213,7 +214,7 @@ padding: 0.2rem .8rem 0px 1rem;
 }
 
 #intro-text {
-  text-align: left;
+  text-align: center;
   margin: auto;
 }
 
@@ -225,6 +226,7 @@ INDEX FOOTER
 */
 
 #index-footer{
+  padding-top: 2rem;
   margin: auto;
   width: 50%;
   text-align: center;
@@ -253,9 +255,11 @@ ABOUT PAGE
 }
 
 #about-image {
-  float: right;
+  margin: 1rem 1rem 0rem 0;
+  float: left;
   width: 15rem;
-  height: 15rem;
+  height: auto;
+  box-shadow: 0 0 5px #32213A;
 }
 
 
@@ -278,7 +282,7 @@ RESUME PAGE
   list-style-type: none;
 }
 
-#resume-format {
+.resume-format {
   padding-left: 3rem;
   padding-top: .3rem;
 }
@@ -292,7 +296,7 @@ RESUME PAGE
 }
 
 #resume-main ul {
-  font-family: 'sumanaregular'
+  font-family: 'sumanaregular', serif;
 }
 
 /*
@@ -302,19 +306,15 @@ CONTACT INFO
 */
 
 #contact-email {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0rem;
 }
 
 #contact-list {
-  padding-top: 225%;
+  padding-top: 200%;
 }
 
-#contact-list li{
-  padding-top: 3.7rem;
-}
-
-#contact-image{
+.contact-image{
   height: 3.5rem;
   width: 3.5rem;
 }
